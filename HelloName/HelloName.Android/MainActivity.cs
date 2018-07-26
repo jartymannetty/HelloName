@@ -6,6 +6,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace HelloName.Droid
 {
@@ -14,6 +17,7 @@ namespace HelloName.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            AppCenter.Start("41c38c11-a8fb-4bcc-ae32-52707c4e4456", typeof(Analytics), typeof(Crashes));
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
