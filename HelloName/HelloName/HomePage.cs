@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AppCenter.Analytics;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
@@ -43,6 +44,7 @@ namespace HelloName
             {
                 await DisplayAlert("Saved", "Welcome, " + name.Text, "OK");
             }
+            Analytics.TrackEvent("Save Clicked");
         }
     }
 }
