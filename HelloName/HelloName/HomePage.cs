@@ -1,4 +1,5 @@
 ﻿using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter;
 using System;
 using System.Collections.Generic;
 using System.Text;
