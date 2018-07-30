@@ -1,3 +1,4 @@
+using Microsoft.AppCenter.Analytics;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,8 +17,10 @@ namespace HelloName
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            // Handle when your app starts
+            Analytics.SetEnabledAsync(true);
+
+        }
 
 		protected override void OnSleep ()
 		{
