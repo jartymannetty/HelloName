@@ -18,13 +18,13 @@ namespace HelloName
                 Placeholder = "Enter name",
                 Text = "",
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Entry)),
+                FontSize = Xamarin.Forms.Device.GetNamedSize(NamedSize.Medium, typeof(Entry)),
                 AutomationId = "name"
             };
             Button saveButton = new Button
             {
                 Text = "Save",
-                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Button)),
+                FontSize = Xamarin.Forms.Device.GetNamedSize(NamedSize.Medium, typeof(Button)),
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 AutomationId = "saveButton"
             };
